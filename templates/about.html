@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% block tittle %}About.My portfolio{% endblock %}
+
+{% block content %}
+<!-- our code here-->
+ <section class="py-5">
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h1 class="display-4 mb-4">About Me</h1>
+                <img src="{{ url_for ('static', filename='images/img1.jpg')}}" alt="about" class="img-fluid rounded mb-4" height="400" width="100%">
+                <p class="lead">A technology and solutions consultant with experience in security systems, automation, and integrated software solutions. I focus on delivering practical, reliable systems that help businesses operate more efficiently and securely.</p>
+
+                <p>Solutions-driven professional specializing in security, automation, and smart technology systems. I help organizations implement reliable, scalable solutions that improve efficiency, safety, and overall performance.</p>
+
+                <p>Im committed to delivering dependable solutions, building long-term partnerships, and creating measurable value for every client I work with.</p>
+
+                <!-- cards -->
+                 <h1 class="display-3 mt-5 mb-4">Skill</h1>
+                 <div class="row g-3">
+                 <div class="col-md-6">
+                    <div class="Skill-item">
+                        <h5>Frontend</h5>
+                        <p class="text-muted">HTML, CSS, JavaScript, Bootstrap</p>
+
+                    </div>
+
+                 </div>
+
+                 <div class="col-md-6">
+                    <div class="Skill-item">
+                    <h5>Backend</h5>
+                    <p class="text-muted">Python, Flask</p>
+                    </div>
+                 </div>
+
+                 <div class="col-md-6">
+                    <div class="Skill-item">
+                        <h5>Database</h5>
+                        <p class="text-muted">MySQL, SQL-Lite</p>
+
+                    </div>
+
+                 </div>
+
+                 <div class="col-md-6">
+                    <div class="Skill-item">
+                        <h5>System Integration</h5>
+                        <p class="text-muted">Customised solutions</p>
+
+                    </div>
+
+                 </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+ </section>
+ {% endblock %}
